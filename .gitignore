@@ -3,3 +3,6 @@
 *.rar
 *.sql
 db.ini
+install/
+files/
+.htaccess
