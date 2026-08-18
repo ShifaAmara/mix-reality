@@ -1,0 +1,86 @@
+#exhibit-blocks {
+    border-bottom: 1px solid $color__hr;
+
+    .exhibit-block {
+        border-bottom: 1px solid $color__hr;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        &.layout-gallery {
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2%;
+                margin-bottom: 1rem;
+
+                .exhibit-item {
+                    margin-right: 0 !important;
+                    width: 49%;
+
+                    @media (min-width: $sm) {
+                        width: auto;
+                    }
+                }
+
+                &.with-showcase,
+                &-showcase {
+                    margin-bottom: 10px;
+                    width: 100%;
+
+                    @media (min-width: $lg) {
+                        width: 49%;
+                    }
+
+                    .exhibit-item {
+                        @media (min-width: $lg) {
+                            width: 23%;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.layout-carousel {
+            a[class*="jcarousel-control-"] {
+                background-color: $color__white;
+                border: 1px solid $color__hr;
+                color: $color__primary;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2rem;
+                text-shadow: none;
+                transition: all .3s ease;
+
+                &:hover {
+                    background-color: $color__primary;
+                    color: $color__white;
+                }
+            }
+
+            .jcarousel-control-prev {
+                padding-right: 3px;
+            }
+
+            .jcarousel-control-next {
+                padding-left: 3px;
+            }
+        }
+    }
+}
+
+#exhibit-pages {
+    margin-top: 30px;
+}

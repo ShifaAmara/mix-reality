@@ -1,0 +1,27 @@
+@import "browse-controls";
+@import "filters";
+@import "items-nav";
+@import "resource-grid";
+@import "resource-list";
+@import "sort-links";
+
+.resource {
+    &__content {
+        padding: 15px;
+    }
+
+    &__heading {
+        font-family: $font__body;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.8rem;
+    }
+
+    &__meta {
+        padding: 5px 10px;
+    }
+
+    p {
+        margin-bottom: 0.8rem;
+    }
+}

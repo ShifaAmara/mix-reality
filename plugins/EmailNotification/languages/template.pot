@@ -1,0 +1,215 @@
+# Translation for the Email Notification plugin for Omeka.
+# Copyright (C) 2018-2021 Daniele Binaghi
+# This file is distributed under the same license as the Omeka package.
+# Daniele Binaghi <admin@bitoteko.it>, 2018-2021
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Email Notification\n"
+"Report-Msgid-Bugs-To: https://github.com/DBinaghi/plugin-EmailNotification/issues\n"
+"POT-Creation-Date: 2018-05-08 11:54+0200\n"
+"PO-Revision-Date: 2018-05-08 12:06+0200\n"
+"PO-Revision-Date: 2021-09-15 14:30+0200\n"
+"PO-Revision-Date: 2021-11-13 14:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: EmailNotificationPlugin.php:35
+msgid "New Item added"
+msgstr ""
+
+#: EmailNotificationPlugin.php:36
+msgid "A new Item has been added to the Omeka repository."
+msgstr ""
+
+#: EmailNotificationPlugin.php:38
+msgid "New Collection added"
+msgstr ""
+
+#: EmailNotificationPlugin.php:39
+msgid "A new Collection has been added to the Omeka repository."
+msgstr ""
+
+#: EmailNotificationPlugin.php:41
+msgid "New Exhibit added"
+msgstr ""
+
+#: EmailNotificationPlugin.php:42
+msgid "A new Exhibit has been added to the Omeka repository."
+msgstr ""
+
+#: EmailNotificationPlugin.php:269
+msgid "public"
+msgstr ""
+
+#: EmailNotificationPlugin.php:269
+msgid "private"
+msgstr ""
+
+#: EmailNotificationPlugin.php:270
+msgid "is featured"
+msgstr ""
+
+#: EmailNotificationPlugin.php:270
+msgid "is not featured"
+msgstr ""
+
+#: EmailNotificationPlugin.php:279
+#: EmailNotificationPlugin.php:293
+#: EmailNotificationPlugin.php:307
+msgid "not provided"
+msgstr ""
+
+#: EmailNotificationPlugin.php:280
+msgid "No title has been provided for the new Item."
+msgstr ""
+
+#: EmailNotificationPlugin.php:294
+msgid "No title has been provided for the new Collection."
+msgstr ""
+
+#: EmailNotificationPlugin.php:308
+msgid "No title has been provided for the new Exhibit."
+msgstr ""
+
+#: EmailNotificationPlugin.php:318
+msgid "This is an automatically generated message - please do not reply directly to this e-mail"
+msgstr ""
+
+#: EmailNotificationPlugin.php:337
+msgid "Admin/editors have been notified about the new addition."
+msgstr ""
+
+#: EmailNotificationPlugin.php:362
+msgid "%s made public"
+msgstr ""
+
+#: EmailNotificationPlugin.php:364
+msgid "Hello!"
+msgstr ""
+
+#: EmailNotificationPlugin.php:365
+msgid "Your %s \"<b>%s</b>\" has just been made public by <b>%s</b>."
+msgstr ""
+
+#: EmailNotificationPlugin.php:366
+msgid "The %s is now available at the page %s."
+msgstr ""
+
+#: EmailNotificationPlugin.php:377
+msgid "The owner of the %s has been notified of the publishing."
+msgstr ""
+
+#: config_form.php:14
+msgid "New Item Addition"
+msgstr ""
+
+#: config_form.php:18
+#: config_form.php:56
+#: config_form.php:95
+msgid "Enable Notification"
+msgstr ""
+
+#: config_form.php:22
+msgid "If checked, sends a notification every time a new Item is added."
+msgstr ""
+
+#: config_form.php:30
+msgid "E-mail Subject"
+msgstr ""
+
+#: config_form.php:34
+#: config_form.php:72
+#: config_form.php:111
+msgid "The subject line for the notification e-mail sent to recipients."
+msgstr ""
+
+#: config_form.php:42
+msgid "E-mail Message"
+msgstr ""
+
+#: config_form.php:46
+#: config_form.php:84
+#: config_form.php:123
+msgid ""
+"The notification message to be sent to recipients. User can insert any of the following fields "
+"(within curly braces) in the text, as many times as they want; they will be substituted by the "
+"actual values when the message is sent: %s"
+msgstr ""
+"Il messaggio di notifica che verrà inviato ai destinatari. L'utente può inserire qualunque dei "
+"seguenti campi modulo (compres tra parentesi graffe) nel testo, quante volte vuole; verranno "
+"sostituiti dai valori attuali al momento della spedizione del messaggio: %s"
+
+#: config_form.php:52
+msgid "New Collection Addition"
+msgstr ""
+
+#: config_form.php:60
+msgid "If checked, sends a notification every time a new Collection is added."
+msgstr ""
+
+#: config_form.php:90
+msgid "New Exhibit Addition"
+msgstr ""
+
+#: config_form.php:99
+msgid "If checked, sends a notification every time a new Exhibit is added."
+msgstr ""
+
+#: config_form.php:133
+msgid "Plugin Unavailable"
+msgstr ""
+
+#: config_form.php:137
+msgid "The Exhibit Builder plugin is not installed or active. Install and activate the plugin in order to be able to configure notifications for new Exhibits."
+msgstr ""
+
+#: config_form.php:143
+msgid "Recipients"
+msgstr ""
+
+#: config_form.php:147
+msgid "Recipient Address"
+msgstr ""
+
+#: config_form.php:151
+msgid "The address(es) that will receive the notification. Multiple addresses must be separated by a comma (,)."
+msgstr ""
+
+#: config_form.php:159
+msgid "Notify Editors"
+msgstr ""
+
+#: config_form.php:163
+msgid "If checked, system sends a notification of new submissions also to users with editing role."
+msgstr ""
+
+#: config_form.php:169
+msgid "Publishing"
+msgstr ""
+
+#: config_form.php:173
+msgid "Notify Owner"
+msgstr ""
+
+#: config_form.php:177
+msgid "If checked, system sends a notification to original owner when an Item / Collection / Exhibit they contributed is made public."
+msgstr ""
+
+#: config_form.php:183
+msgid "Alerts"
+msgstr ""
+
+#: config_form.php:187
+msgid "Notification Alert"
+msgstr ""
+
+#: config_form.php:191
+msgid "If checked, system shows an alert informing contributor that notifications have been sent."
+msgstr ""

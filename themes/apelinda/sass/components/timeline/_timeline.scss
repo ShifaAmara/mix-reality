@@ -1,0 +1,49 @@
+body.timelines {
+
+    .tl-timeline {
+        .tl-slidenav-next:focus,
+        .tl-slidenav-previous:focus {
+            outline: none;
+        }
+
+        @for $i from 1 through 6 {
+            h#{$i} {
+                @include heading(h#{$i});
+            }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: $font__body !important;
+            text-transform: none;
+        }
+
+        .tl-headline {
+            margin-bottom: 1rem;
+        }
+
+        .tl-headline-date {
+            font-size: 1.7rem;
+            margin-bottom: 0;
+        }
+
+        .tl-slidenav-title {
+            font-family: $font__body;
+            font-size: 0.6rem;
+        }
+
+        .tl-slidenav-icon {
+            color: $color__primary;
+        }
+
+        p {
+            color: $color__gray-40;
+            font-family: $font__body;
+            font-size: 1rem;
+            line-height: $font__base-line-height;
+        }
+
+        a {
+            @include link;
+        }
+    }
+}

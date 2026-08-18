@@ -1,0 +1,38 @@
+#sort-links {
+    align-items: center;
+}
+
+#sort-links,
+#sort-links-list {
+    display: flex;
+    gap: 10px;
+}
+
+#sort-links-list {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    li {
+        margin-bottom: 0;
+    }
+
+    li:not(:last-child) {
+        border-right: 1px solid $color__hr;
+        padding-right: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .asc a::after {
+        @include font-awesome;
+        content: "\f161";
+    }
+
+    .desc a::after {
+        @include font-awesome;
+        content: "\f884";
+    }
+}

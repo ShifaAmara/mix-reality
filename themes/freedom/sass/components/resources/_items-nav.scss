@@ -1,0 +1,30 @@
+.secondary-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    .navigation {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 0;
+
+        li {
+            margin-bottom: 0;
+        }
+
+        .active a {
+            @include primary-button;
+        }
+
+        a {
+            @include secondary-button;
+            font-size: $font__sm-size !important;
+            padding: 10px 14px !important;
+        }
+    }
+}

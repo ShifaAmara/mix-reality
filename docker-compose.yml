@@ -1,0 +1,28 @@
+services:
+  db:
+    image: mariadb:10.6
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: histech
+      MYSQL_USER: ami
+      MYSQL_PASSWORD: nanonganteng22
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: unless-stopped
+
+  omeka:
+    build: .
+    ports:
+      - "8081:80"
+    depends_on:
+      - db
+    volumes:
+      - ./files:/var/www/html/files
+      - ./themes:/var/www/html/themes
+      - ./plugins:/var/www/html/plugins
+      - ./voyager-scenes:/var/www/html/voyager-scenes
+      - ./video:/var/www/html/video
+    restart: unless-stopped
+
+volumes:
+  db_data:

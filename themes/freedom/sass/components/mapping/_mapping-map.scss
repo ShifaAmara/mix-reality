@@ -1,0 +1,15 @@
+.geolocation-map {
+    .leaflet-popup-content {
+        margin: 13px;
+    }
+
+    .geolocation_balloon_title {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    a {
+        @include link;
+        font-weight: 500;
+    }
+}

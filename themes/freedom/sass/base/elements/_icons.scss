@@ -1,0 +1,15 @@
+[class*="o-icon"] {
+    @include font-awesome;
+}
+
+.o-icon-list::before {
+    content: "\f03a";
+}
+
+.o-icon-grid::before {
+    content: "\f009";
+}
+
+.o-icon-chevron-down::before {
+    content: "\f078";
+}

@@ -1,0 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    padding-top: 133px;
+
+    @media (min-width: $lg) {
+        padding-top: 160px;
+    }
+
+    &.main-header--center {
+        padding-top: 230px;
+    }
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+.container {
+    @include container;
+}
+
+#main-content {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    @media (min-width: $lg) {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@import "regions";

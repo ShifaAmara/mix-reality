@@ -1,0 +1,10 @@
+$header-height: 180px;
+
+.anchor::before {
+  display: block;
+  content: " ";
+  margin-top: -$header-height;
+  height: $header-height;
+  visibility: hidden;
+  pointer-events: none;
+}

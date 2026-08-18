@@ -1,0 +1,75 @@
+// Headings
+@mixin heading($h) {
+    color: $color__headings;
+    margin-top: 0;
+
+    @if $h == h1 {
+        clear: both;
+        font-family: $font__headings;
+        font-size: $font__h1-sm-size; //40px
+        font-weight: 500;
+        line-height: $font__headings-line-height;
+        margin-bottom: 1.875rem;;
+
+        @media (min-width: $md) {
+            font-size: $font__h1-base-size; //50px
+            margin-bottom: 3.125rem;
+        }
+    } @else if $h == h2 {
+        font-family: $font__headings;
+        font-size: $font__h2-sm-size; //35px
+        font-weight: 500;
+        line-height: $font__headings-line-height;
+        margin-bottom: 1.875rem;
+
+        @media (min-width: $md) {
+            font-size: $font__h2-base-size; //40px
+        }
+    } @else if $h == h3 {
+        font-family: $font__headings;
+        font-size: $font__h3-sm-size; //30px
+        font-weight: 400;
+        line-height: $font__headings-line-height;
+        margin-bottom: 1.875rem;
+
+        @media (min-width: $md) {
+            font-size: $font__h3-base-size; //35px
+        }
+    } @else if $h == h4 {
+        font-family: $font__headings;
+        font-size: $font__h4-sm-size; //25px
+        font-weight: 400;
+        line-height: $font__headings-line-height;
+        margin-bottom: 1.75rem;
+
+        @media (min-width: $md) {
+            font-size: $font__h4-base-size; //30px
+        }
+    } @else if $h == h5 {
+        font-family: $font__body;
+        font-size: $font__h5-sm-size; //22px
+        font-weight: 600;
+        line-height: $font__headings-line-height;
+        margin-bottom: 1.4rem;
+
+        @media (min-width: $md) {
+            font-size: $font__h5-base-size; //30px
+        }
+    } @else if $h == h6 {
+        font-family: $font__body;
+        font-size: $font__h6-sm-size; //18px
+        font-weight: 600;
+        line-height: $font__headings-line-height;
+        margin-bottom: 1rem;
+
+        @media (min-width: $md) {
+            font-size: $font__h6-base-size; //30px
+        }
+    }
+}
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        @include heading(h#{$i});
+    }
+}

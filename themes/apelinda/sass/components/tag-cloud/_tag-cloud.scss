@@ -1,0 +1,78 @@
+.record-tags {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin-bottom: 10px;
+    padding-left: 0;
+
+    .record-tag {
+        display: inline-block;
+        border-radius: 3px;
+        color: $color__black;
+        font-size: $font__xs-size;
+        font-weight: 600;
+        padding: 5px 10px;
+        text-decoration: none;
+    
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .additional-tags {
+        font-size: $font__xs-size;
+    }
+
+    li {
+        margin-bottom: 0;
+    }
+
+    &.popularity {
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+
+        .popular .record-tag {
+            font-size: 0.75rem;
+        }
+            
+        .v-popular .record-tag {
+            font-size: 0.85rem;
+        }
+            
+        .vv-popular .record-tag {
+            font-size: 0.95rem;
+        }
+            
+        .vvv-popular .record-tag {
+            font-size: 1.05rem;
+        }
+            
+        .vvvv-popular .record-tag {
+            font-size: 1.15rem;
+        }
+            
+        .vvvvv-popular .record-tag {
+            font-size: 1.25rem;
+        }
+            
+        .vvvvvv-popular .record-tag {
+            font-size: 1.35rem;
+        }
+            
+        .vvvvvvv-popular .record-tag {
+            font-size: 1.45rem;
+        }
+            
+        .vvvvvvvv-popular .record-tag {
+            font-size: 1.55rem;
+        }
+            
+        .vvvvvvvvv-popular .record-tag {
+            font-size: 1.65rem;
+        }
+    }
+}
